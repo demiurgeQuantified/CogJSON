@@ -2,7 +2,7 @@
     "$schema": "cogschema.json",
     "cogs": {
         "ColdCaller": {
-            "dept": "sellbot",
+            "department": "sellbot",
             "minLevel": 1,
             "body": "c",
             "size": 3.5,
@@ -11,14 +11,14 @@
             "gloveColor": [0.55, 0.65, 1.0]
         },
         "Telemarketer": {
-            "dept": "sellbot",
+            "department": "sellbot",
             "minLevel": 2,
             "body": "b",
             "size": 3.75,
             "head": "telemarketer"
         },
         "NameDropper": {
-            "dept": "sellbot",
+            "department": "sellbot",
             "minLevel": 3,
             "body": "a",
             "size": 4.35,
@@ -26,28 +26,28 @@
             "headTexture": "name-dropper"
         },
         "GladHander": {
-            "dept": "sellbot",
+            "department": "sellbot",
             "minLevel": 4,
             "body": "c",
             "size": 4.75,
             "head": "gladhander"
         },
         "MoverAndShaker": {
-            "dept": "sellbot",
+            "department": "sellbot",
             "minLevel": 5,
             "body": "b",
             "size": 4.75,
             "head": "movershaker"
         },
         "TwoFace": {
-            "dept": "sellbot",
+            "department": "sellbot",
             "minLevel": 6,
             "body": "a",
             "size": 5.25,
             "head": "twoface"
         },
         "TheMingler": {
-            "dept": "sellbot",
+            "department": "sellbot",
             "minLevel": 7,
             "body": "a",
             "size": 5.75,
@@ -55,21 +55,21 @@
             "headTexture": "mingler"
         },
         "MrHollywood": {
-            "dept": "sellbot",
+            "department": "sellbot",
             "minLevel": 8,
             "body": "a",
             "size": 7.0,
             "head": "yesman"
         },
         "ShortChange": {
-            "dept": "cashbot",
+            "department": "cashbot",
             "minLevel": 1,
             "body": "c",
             "size": 3.6,
             "head": "coldcaller"
         },
         "PennyPincher": {
-            "dept": "cashbot",
+            "department": "cashbot",
             "minLevel": 2,
             "body": "a",
             "size": 3.55,
@@ -77,35 +77,35 @@
             "gloveColor": [1.0, 0.5, 0.6]
         },
         "Tightwad": {
-            "dept": "cashbot",
+            "department": "cashbot",
             "minLevel": 3,
             "body": "c",
             "size": 4.5,
             "head": "tightwad"
         },
         "BeanCounter": {
-            "dept": "cashbot",
+            "department": "cashbot",
             "minLevel": 4,
             "body": "b",
             "size": 4.4,
             "head": "beancounter"
         },
         "NumberCruncher": {
-            "dept": "cashbot",
+            "department": "cashbot",
             "minLevel": 5,
             "body": "a",
             "size": 5.25,
             "head": "numbercruncher"
         },
         "MoneyBags": {
-            "dept": "cashbot",
+            "department": "cashbot",
             "minLevel": 6,
             "body": "c",
             "size": 5.3,
             "head": "moneybags"
         },
         "LoanShark": {
-            "dept": "cashbot",
+            "department": "cashbot",
             "minLevel": 7,
             "body": "b",
             "size": 6.5,
@@ -113,7 +113,7 @@
             "gloveColor": [0.5, 0.85, 0.75]
         },
         "RobberBaron": {
-            "dept": "cashbot",
+            "department": "cashbot",
             "minLevel": 8,
             "body": "a",
             "size": 7.0,
@@ -121,7 +121,7 @@
             "headTexture": "robber-baron"
         },
         "BottomFeeder": {
-            "dept": "lawbot",
+            "department": "lawbot",
             "minLevel": 1,
             "body": "c",
             "size": 4.0,
@@ -129,7 +129,7 @@
             "headTexture": "bottom-feeder"
         },
         "Bloodsucker": {
-            "dept": "lawbot",
+            "department": "lawbot",
             "minLevel": 2,
             "body": "b",
             "size": 4.375,
@@ -138,7 +138,7 @@
             "gloveColor": [0.95, 0.95, 1.0]
         },
         "DoubleTalker": {
-            "dept": "lawbot",
+            "department": "lawbot",
             "minLevel": 3,
             "body": "a",
             "size": 4.25,
@@ -146,21 +146,21 @@
             "headTexture": "double-talker"
         },
         "AmbulanceChaser": {
-            "dept": "lawbot",
+            "department": "lawbot",
             "minLevel": 4,
             "body": "b",
             "size": 4.35,
             "head": "ambulancechaser"
         },
         "Backstabber": {
-            "dept": "lawbot",
+            "department": "lawbot",
             "minLevel": 5,
             "body": "a",
             "size": 4.5,
             "head": "backstabber"
         },
         "SpinDoctor": {
-            "dept": "lawbot",
+            "department": "lawbot",
             "minLevel": 6,
             "body": "b",
             "size": 5.65,
@@ -169,7 +169,7 @@
             "gloveColor": [0.5, 0.8, 0.75]
         },
         "LegalEagle": {
-            "dept": "lawbot",
+            "department": "lawbot",
             "minLevel": 7,
             "body": "a",
             "size": 7.125,
@@ -177,56 +177,56 @@
             "gloveColor": [0.25, 0.25, 0.5]
         },
         "BigWig": {
-            "dept": "lawbot",
+            "department": "lawbot",
             "minLevel": 8,
             "body": "a",
             "size": 7.0,
             "head": "bigwig"
         },
         "Flunky": {
-            "dept": "bossbot",
+            "department": "bossbot",
             "minLevel": 1,
             "body": "c",
             "size": 4.0,
             "head": ["flunky", "glasses"]
         },
         "PencilPusher": {
-            "dept": "bossbot",
+            "department": "bossbot",
             "minLevel": 2,
             "body": "b",
             "size": 3.35,
             "head": "pencilpusher"
         },
         "Yesman": {
-            "dept": "bossbot",
+            "department": "bossbot",
             "minLevel": 3,
             "body": "a",
             "size": 4.125,
             "head": "yesman"
         },
         "Micromanager": {
-            "dept": "bossbot",
+            "department": "bossbot",
             "minLevel": 4,
             "body": "c",
             "size": 2.5,
             "head": "micromanager"
         },
         "Downsizer": {
-            "dept": "bossbot",
+            "department": "bossbot",
             "minLevel": 5,
             "body": "b",
             "size": 4.5,
             "head": "beancounter"
         },
         "HeadHunter": {
-            "dept": "bossbot",
+            "department": "bossbot",
             "minLevel": 6,
             "body": "a",
             "size": 6.5,
             "head": "headhunter"
         },
         "CorporateRaider": {
-            "dept": "bossbot",
+            "department": "bossbot",
             "minLevel": 7,
             "body": "c",
             "size": 6.75,
@@ -235,7 +235,7 @@
             "gloveColor": [0.85, 0.55, 0.55]
         },
         "TheBigCheese": {
-            "dept": "bossbot",
+            "department": "bossbot",
             "minLevel": 8,
             "body": "a",
             "size": 7.0,

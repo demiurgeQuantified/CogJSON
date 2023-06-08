@@ -39,7 +39,7 @@
                     "type": "string",
                     "description": "Name of the cog, usually a translation string."
                 },
-                "dept": {
+                "department": {
                     "type": "string",
                     "description": "Cog department.",
                     "enum": ["sellbot", "cashbot", "lawbot", "bossbot"]
@@ -92,7 +92,7 @@
                     "minItems": 1
                 }
             },
-            "required": ["dept", "body", "size", "head", "minLevel"]
+            "required": ["department", "body", "size", "head", "minLevel"]
         },
         "attacks": {
             "type": "object",
