@@ -23,7 +23,7 @@
             "body": "a",
             "size": 4.35,
             "head": "numbercruncher",
-            "headTexture": "name-dropper"
+            "headTexture": "phase_4/maps/name-dropper"
         },
         "GladHander": {
             "department": "sellbot",
@@ -52,7 +52,7 @@
             "body": "a",
             "size": 5.75,
             "head": "twoface",
-            "headTexture": "mingler"
+            "headTexture": "phase_4/maps/mingler"
         },
         "MrHollywood": {
             "department": "sellbot",
@@ -118,7 +118,7 @@
             "body": "a",
             "size": 7.0,
             "head": "yesman",
-            "headTexture": "robber-baron"
+            "headTexture": "phase_4/maps/robber-baron"
         },
         "BottomFeeder": {
             "department": "lawbot",
@@ -126,7 +126,7 @@
             "body": "c",
             "size": 4.0,
             "head": "tightwad",
-            "headTexture": "bottom-feeder"
+            "headTexture": "phase_3.5/maps/bottom-feeder"
         },
         "Bloodsucker": {
             "department": "lawbot",
@@ -134,7 +134,7 @@
             "body": "b",
             "size": 4.375,
             "head": "movershaker",
-            "headTexture": "blood-sucker",
+            "headTexture": "phase_4/maps/blood-sucker",
             "gloveColor": [0.95, 0.95, 1.0]
         },
         "DoubleTalker": {
@@ -143,7 +143,7 @@
             "body": "a",
             "size": 4.25,
             "head": "twoface",
-            "headTexture": "double-talker"
+            "headTexture": "phase_4/maps/double-talker"
         },
         "AmbulanceChaser": {
             "department": "lawbot",
@@ -165,7 +165,7 @@
             "body": "b",
             "size": 5.65,
             "head": "telemarketer",
-            "headTexture": "spin-doctor",
+            "headTexture": "phase_4/maps/spin-doctor",
             "gloveColor": [0.5, 0.8, 0.75]
         },
         "LegalEagle": {
@@ -231,7 +231,7 @@
             "body": "c",
             "size": 6.75,
             "head": "flunky",
-            "headTexture": "corporate-raider",
+            "headTexture": "phase_3.5/maps/corporate-raider",
             "gloveColor": [0.85, 0.55, 0.55]
         },
         "TheBigCheese": {
