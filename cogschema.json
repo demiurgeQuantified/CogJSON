@@ -92,7 +92,7 @@
                     "minItems": 1
                 }
             },
-            "required": ["department", "body", "size", "head", "minLevel"]
+            "required": ["department", "body", "size", "head"]
         },
         "attacks": {
             "type": "object",
