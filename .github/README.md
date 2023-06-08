@@ -10,8 +10,9 @@ Name | Type | Description | Default Value
 department | String | The cog's department ("sellbot", "cashbot", "lawbot", "bossbot") | Required
 body | String | The cog's body type ("a", "b", "c") | Required
 size | Float | The scaling factor applied to the cog's body. | Required
-head | String | The head model the cog uses. | Required
-headTexture | String/Array[String] | The name of the head mesh the cog uses, or an array of them if the cog uses multiple. | None
+head | String | The head mesh the cog uses. Must be a part of that body type's heads file. | Required
+headTexture | String | The path to a texture to override the head mesh's with. | None
+head2 | String | An additional head mesh to use (flunky glasses). | None
 headColor | Color | The head's color tint. | None
 gloveColor | Color/string | The tint of the cog's gloves. Can also be the string name of a cog department to get that department's default glove color. | Default color for the cog's department
 minLevel | Integer | The lowest level this cog appears at. | 1

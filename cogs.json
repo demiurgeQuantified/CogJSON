@@ -188,7 +188,8 @@
             "minLevel": 1,
             "body": "c",
             "size": 4.0,
-            "head": ["flunky", "glasses"]
+            "head": "flunky",
+            "head2": "glasses"
         },
         "PencilPusher": {
             "department": "bossbot",

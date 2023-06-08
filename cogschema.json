@@ -71,9 +71,12 @@
                     "description": "Color to tint the gloves. Defaults to a department-specific glove colour."
                 },
                 "head": {
-                    "oneOf": [{"type": "string"},
-                              {"type": "array", "items": {"type": "string"}}],
-                    "description": "Name of the head mesh used by this cog. Can be an array of multiple meshes."
+                    "type": "string",
+                    "description": "Name of the head mesh used by this cog."
+                },
+                "head2": {
+                    "type": "string",
+                    "description": "Name of an additional head mesh used by the cog (flunky glasses)."
                 },
                 "headTexture": {
                     "type": "string",
