@@ -1,0 +1,152 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "cogschema.json",
+    "title": "Cogs",
+    "description": "Definition file for Toontown cogs and attacks.",
+    "type": "object",
+    "properties": {
+        "cogs": {
+            "$ref": "#/definitions/cogs"
+        },
+        "attacks": {
+            "$ref": "#/definitions/attacks"
+        }
+    },
+    "definitions": {
+        "color": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+        },
+        "cogs": {
+            "type": "object",
+            "description": "Cogs.",
+            "minItems": 1,
+            "patternProperties": {
+                "^": {
+                  "$ref": "#/definitions/cog"
+                }
+            }
+        },
+        "cog": {
+            "type": "object",
+            "description": "A cog ",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the cog, usually a translation string."
+                },
+                "dept": {
+                    "type": "string",
+                    "description": "Cog department.",
+                    "enum": ["sellbot", "cashbot", "lawbot", "bossbot"]
+                },
+                "minLevel": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "The lowest level this cog can be."
+                },
+                "numLevels": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "The number of levels this cog ranges. The cog's maximum level will be minLevel plus this number, minus one.",
+                    "default": 5
+                },
+                "body": {
+                    "type": "string",
+                    "description": "Body model type.",
+                    "enum": ["a", "b", "c"]
+                },
+                "size": {
+                    "type": "number",
+                    "description": "Scaling factor applied to the model.",
+                    "exclusiveMinimum": 0
+                },
+                "gloveColor": {
+                    "oneOf": [{"$ref": "#/definitions/color"},
+                              {"type": "string", "enum": ["sellbot", "cashbot", "lawbot", "bossbot"]}],
+                    "description": "Color to tint the gloves. Defaults to a department-specific glove colour."
+                },
+                "head": {
+                    "oneOf": [{"type": "string"},
+                              {"type": "array", "items": {"type": "string"}}],
+                    "description": "Name of the head mesh used by this cog. Can be an array of multiple meshes."
+                },
+                "headTexture": {
+                    "type": "string",
+                    "description": "Name of a texture to replace the cog's head texture with."
+                },
+                "headColor": {
+                    "$ref": "#/definitions/color",
+                    "description": "Color to tint the head."
+                },
+                "attacks": {
+                    "type": "array",
+                    "description": "An array of attack IDs and/or attacks.",
+                    "items": {
+                        "oneOf": [{"$ref": "#/definitions/attack"}, {"type": "string"}]
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": ["dept", "body", "size", "head", "minLevel"]
+        },
+        "attacks": {
+            "type": "object",
+            "description": "Attack definitions.",
+            "minItems": 1,
+            "patternProperties": {
+                "^": {
+                  "$ref": "#/definitions/attack"
+                }
+            }
+        },
+        "attack": {
+            "type": "object",
+            "properties": {
+                "stats": {
+                    "$ref": "#/definitions/attackStatsCollection"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the attack, usually a translation string."
+                }
+            },
+            "required": ["stats", "name"],
+            "description": ""
+        },
+        "attackStatsCollection": {
+            "type": "object",
+            "description": "Per-level stats for the attack.",
+            "patternProperties": {
+                "^[0-9]+$": {
+                    "description": "Stats for this level of attacking cog.",
+                    "$ref": "#/definitions/attackStats"
+                }
+            },
+            "additionalProperties": false,
+            "minProperties": 1
+        },
+        "attackStats": {
+            "type": "object",
+            "properties": {
+                "damage": {
+                    "type": "integer",
+                    "description": "How much damage the attack deals."
+                },
+                "accuracy": {
+                    "type": "integer",
+                    "description": "How likely the attack is to hit."
+                },
+                "usage": {
+                    "type": "integer",
+                    "description": "How likely the attack is to be picked."
+                }
+            },
+            "required": ["damage", "accuracy", "usage"]
+        }
+    }
+}
