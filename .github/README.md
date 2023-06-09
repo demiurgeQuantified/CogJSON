@@ -17,5 +17,12 @@ headColor | Color | The head's color tint. | None
 gloveColor | Color/string | The tint of the cog's gloves. Can also be the string name of a cog department to get that department's default glove color. | Default color for the cog's department
 minLevel | Integer | The lowest level this cog appears at. | 1
 numLevels | Integer | How many levels this cog ranges between. The cog's max level will be minLevel plus this number, minus 1 | 5
+## Department Format
+Name | Type | Description | Default Value
+--- | --- | --- | ---
+blazerTex | String | The path of this department's torso texture. | Required
+legTex | String | The path of this department's leg texture. | Required
+sleeveTex | String | The path of this department's sleeve texture. | Required
+gloveColor | Color | Default glove color for this department. | None
 ## Attack Format
 Attacks are planned but not included in the current version of the dataset, and the format outlined in the schema is WIP.

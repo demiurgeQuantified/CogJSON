@@ -10,6 +10,9 @@
         },
         "attacks": {
             "$ref": "#/definitions/attacks"
+        },
+        "departments": {
+            "$ref": "#/definitions/departments"
         }
     },
     "definitions": {
@@ -96,6 +99,39 @@
                 }
             },
             "required": ["department", "body", "size", "head"]
+        },
+        "departments": {
+            "type": "object",
+            "description": "Department definitions.",
+            "minItems": 1,
+            "patternProperties": {
+                "^": {
+                    "$ref": "#/definitions/department"
+                }
+            }
+        },
+        "department": {
+            "type": "object",
+            "description": "Definitions for a cog department. Mostly involves default settings for cogs in that department.",
+            "properties": {
+                "blazerTex": {
+                    "type": "string",
+                    "description": "Path to the blazer texture for this department."
+                },
+                "legTex": {
+                    "type": "string",
+                    "description": "Path to the leg texture for this department."
+                },
+                "sleeveTex": {
+                    "type": "string",
+                    "description": "Path to the sleeve texture for this department."
+                },
+                "gloveColor": {
+                    "$ref": "#/definitions/color",
+                    "description": "Default glove color for cogs in this department."
+                }
+            },
+            "required": ["blazerTex", "legTex", "sleeveTex"]
         },
         "attacks": {
             "type": "object",
