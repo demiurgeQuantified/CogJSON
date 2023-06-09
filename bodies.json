@@ -1,0 +1,17 @@
+{
+  "$schema": "cogschema.json",
+  "bodies": {
+    "a": {
+      "model": "phase_3.5/models/char/suitA-mod",
+      "headsModel": "phase_4/models/char/suitA-heads"
+    },
+    "b": {
+      "model": "phase_3.5/models/char/suitB-mod",
+      "headsModel": "phase_4/models/char/suitB-heads"
+    },
+    "c": {
+      "model": "phase_3.5/models/char/suitC-mod",
+      "headsModel": "phase_3.5/models/char/suitC-heads"
+    }
+  }
+}

@@ -17,6 +17,11 @@ headColor | Color | The head's color tint. | None
 gloveColor | Color/string | The tint of the cog's gloves. Can also be the string name of a cog department to get that department's default glove color. | Default color for the cog's department
 minLevel | Integer | The lowest level this cog appears at. | 1
 numLevels | Integer | How many levels this cog ranges between. The cog's max level will be minLevel plus this number, minus 1 | 5
+## Body Format
+Name | Type | Description | Default Value
+--- | --- | --- | ---
+model | String | The path of this body's main model. | Required
+headsModel | String | The path of the model where the heads are stored. | Required
 ## Department Format
 Name | Type | Description | Default Value
 --- | --- | --- | ---

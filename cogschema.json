@@ -13,6 +13,9 @@
         },
         "departments": {
             "$ref": "#/definitions/departments"
+        },
+        "bodies": {
+            "$ref": "#/definitions/bodies"
         }
     },
     "definitions": {
@@ -132,6 +135,31 @@
                 }
             },
             "required": ["blazerTex", "legTex", "sleeveTex"]
+        },
+        "bodies": {
+            "type": "object",
+            "description": "Body definitions.",
+            "minItems": 1,
+            "patternProperties": {
+                "^" : {
+                    "$ref": "#/definitions/body"
+                }
+            }
+        },
+        "body": {
+            "type": "object",
+            "description": "Definitions for a cog body.",
+            "properties": {
+                "model": {
+                    "type": "string",
+                    "description": "Path to the model for this body."
+                },
+                "headsModel": {
+                    "type": "string",
+                    "description": "Path to the model where this body's heads are stored."
+                }
+            },
+            "required": ["model", "headsModel"]
         },
         "attacks": {
             "type": "object",
