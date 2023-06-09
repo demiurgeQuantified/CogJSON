@@ -22,6 +22,7 @@ Name | Type | Description | Default Value
 --- | --- | --- | ---
 model | String | The path of this body's main model. | Required
 headsModel | String | The path of the model where the heads are stored. | Required
+animations | Dictionary | Pairs of animation names and model paths. | None
 ## Department Format
 Name | Type | Description | Default Value
 --- | --- | --- | ---

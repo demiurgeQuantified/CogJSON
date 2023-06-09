@@ -157,6 +157,15 @@
                 "headsModel": {
                     "type": "string",
                     "description": "Path to the model where this body's heads are stored."
+                },
+                "animations": {
+                    "description": "A list of animations for this body type.",
+                    "patternProperties": {
+                        "^": {
+                            "type": "string",
+                            "description": "The name and path of an animation."
+                        }
+                    }
                 }
             },
             "required": ["model", "headsModel"]
