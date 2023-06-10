@@ -181,9 +181,28 @@
                     "type": "string",
                     "description": "Path to the model where this body's heads are stored."
                 },
-                "skelecogModel": {
+                "loseModel": {
                     "type": "string",
-                    "description": "Model to use when this body is used for a skelecog."
+                    "description": "Path to the model used for the cog's LoseActor."
+                },
+                "skelecog": {
+                    "type": "object",
+                    "description": "Definitions for when this body is a skelecog.",
+                    "properties": {
+                        "model": {
+                            "type": "string",
+                            "description": "Path to the model to use when a skelecog."
+                        },
+                        "loseModel": {
+                            "type": "string",
+                            "description": "Path to the loseModel to use when a skelecog."
+                        }
+                    },
+                    "required": ["model"]
+                },
+                "loseAnim": {
+                    "type": "string",
+                    "description": "Name of the animation to use when exploding."
                 },
                 "animations": {
                     "description": "A list of animations for this body type.",

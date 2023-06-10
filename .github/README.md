@@ -22,8 +22,14 @@ Name | Type | Description | Default Value
 --- | --- | --- | ---
 model | String | The path of this body's main model. | Required
 headsModel | String | The path of the model where the heads are stored. | Required
-skelecogModel | String | The path of the corresponding skelecog model. | Required
+loseModel | String | The path of the model used when the cog is exploding | None
+loseAnim | String | The name of the animation used when the cog is exploding | lose
 animations | Dictionary | Pairs of animation names and model paths. | None
+### Skelecog Format
+Name | Type | Description | Default Value
+--- | --- | --- | ---
+model | String | The path of the model to use when a skelecog. | Required
+loseModel | String | The path of the loseModel to use when a skelecog. | Required
 ## Department Format
 Name | Type | Description | Default Value
 --- | --- | --- | ---
