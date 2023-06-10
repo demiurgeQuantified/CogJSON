@@ -117,24 +117,28 @@
             "type": "object",
             "description": "Definitions for a cog department. Mostly involves default settings for cogs in that department.",
             "properties": {
-                "blazerTex": {
+                "blazer": {
                     "type": "string",
                     "description": "Path to the blazer texture for this department."
                 },
-                "legTex": {
+                "leg": {
                     "type": "string",
                     "description": "Path to the leg texture for this department."
                 },
-                "sleeveTex": {
+                "sleeve": {
                     "type": "string",
                     "description": "Path to the sleeve texture for this department."
+                },
+                "tie" : {
+                    "type": "string",
+                    "description": "Path to the skelecog tie texture for this department."
                 },
                 "gloveColor": {
                     "$ref": "#/definitions/color",
                     "description": "Default glove color for cogs in this department."
                 }
             },
-            "required": ["blazerTex", "legTex", "sleeveTex"]
+            "required": ["blazer", "leg", "sleeve", "tie"]
         },
         "bodies": {
             "type": "object",
@@ -157,6 +161,10 @@
                 "headsModel": {
                     "type": "string",
                     "description": "Path to the model where this body's heads are stored."
+                },
+                "skelecogModel": {
+                    "type": "string",
+                    "description": "Model to use when this body is used for a skelecog."
                 },
                 "animations": {
                     "description": "A list of animations for this body type.",

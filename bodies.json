@@ -4,6 +4,7 @@
     "a": {
       "model": "phase_3.5/models/char/suitA-mod",
       "headsModel": "phase_4/models/char/suitA-heads",
+      "skelecogModel": "phase_5/models/char/cogA_robot-zero",
       "animations": {
         "neutral": "phase_4/models/char/suitA-neutral",
         "walk": "phase_4/models/char/suitA-walk",
@@ -59,6 +60,7 @@
     "b": {
       "model": "phase_3.5/models/char/suitB-mod",
       "headsModel": "phase_4/models/char/suitB-heads",
+      "skelecogModel": "phase_5/models/char/cogB_robot-zero",
       "animations": {
         "neutral": "phase_4/models/char/suitB-neutral",
         "walk": "phase_4/models/char/suitB-walk",
@@ -104,6 +106,7 @@
     "c": {
       "model": "phase_3.5/models/char/suitC-mod",
       "headsModel": "phase_3.5/models/char/suitC-heads",
+      "skelecogModel": "phase_5/models/char/cogC_robot-zero",
       "animations": {
         "neutral": "phase_3.5/models/char/suitC-neutral",
         "walk": "phase_3.5/models/char/suitC-walk",

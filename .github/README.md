@@ -22,13 +22,15 @@ Name | Type | Description | Default Value
 --- | --- | --- | ---
 model | String | The path of this body's main model. | Required
 headsModel | String | The path of the model where the heads are stored. | Required
+skelecogModel | String | The path of the corresponding skelecog model. | Required
 animations | Dictionary | Pairs of animation names and model paths. | None
 ## Department Format
 Name | Type | Description | Default Value
 --- | --- | --- | ---
-blazerTex | String | The path of this department's torso texture. | Required
-legTex | String | The path of this department's leg texture. | Required
-sleeveTex | String | The path of this department's sleeve texture. | Required
+blazer | String | The path of this department's torso texture. | Required
+leg | String | The path of this department's leg texture. | Required
+sleeve | String | The path of this department's sleeve texture. | Required
+tie | String | The path of the tie texture, used for skelecogs. | Required
 gloveColor | Color | Default glove color for this department. | None
 ## Attack Format
 Attacks are planned but not included in the current version of the dataset, and the format outlined in the schema is WIP.
