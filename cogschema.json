@@ -136,9 +136,28 @@
                 "gloveColor": {
                     "$ref": "#/definitions/color",
                     "description": "Default glove color for cogs in this department."
+                },
+                "medallion": {
+                    "type": "object",
+                    "description": "Definitions for the department medallion.",
+                    "properties": {
+                        "model": {
+                            "type": "string",
+                            "description": "The path to the model for this medallion."
+                        },
+                        "part": {
+                            "type": "string",
+                            "description": "If the model contains multiple models, the name of the part containing the medallion."
+                        },
+                        "color": {
+                            "$ref": "#/definitions/color",
+                            "description": "The color to tint the medallion."
+                        }
+                    },
+                    "required": ["model", "color"]
                 }
             },
-            "required": ["blazer", "leg", "sleeve", "tie"]
+            "required": ["blazer", "leg", "sleeve", "tie", "medallion"]
         },
         "bodies": {
             "type": "object",

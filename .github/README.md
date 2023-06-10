@@ -32,5 +32,11 @@ leg | String | The path of this department's leg texture. | Required
 sleeve | String | The path of this department's sleeve texture. | Required
 tie | String | The path of the tie texture, used for skelecogs. | Required
 gloveColor | Color | Default glove color for this department. | None
+### Medallion Format
+Name | Type | Description | Default Value
+--- | --- | --- | ---
+model | String | The path to the model where the medallion is stored. | Required
+part | String | If the medallion stores multiple models, the name of the part containing the wanted medallion. | Required
+color | Color | The color to tint the medallion. | Required
 ## Attack Format
 Attacks are planned but not included in the current version of the dataset, and the format outlined in the schema is WIP.
