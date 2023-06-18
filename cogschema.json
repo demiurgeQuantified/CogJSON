@@ -185,6 +185,10 @@
                     "type": "string",
                     "description": "Path to the model used for the cog's LoseActor."
                 },
+                "sizeFactor": {
+                    "type": "number",
+                    "description": "Scaling factor for the model, to keep sizes comparable between differently sized models."
+                },
                 "skelecog": {
                     "type": "object",
                     "description": "Definitions for when this body is a skelecog.",

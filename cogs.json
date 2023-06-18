@@ -4,7 +4,8 @@
 		"a": {
 			"model": "phase_3.5/models/char/suitA-mod",
 			"headsModel": "phase_4/models/char/suitA-heads",
-			"loseModel":  "phase_4/models/char/suitA-lose-mod",
+			"loseModel": "phase_4/models/char/suitA-lose-mod",
+            "sizeFactor": 6.06,
 			"skelecog": {
 				"model": "phase_5/models/char/cogA_robot-zero",
 				"loseModel": "phase_5/models/char/cogA_robot-lose-mod"
@@ -65,7 +66,8 @@
 		"b": {
 			"model": "phase_3.5/models/char/suitB-mod",
 			"headsModel": "phase_4/models/char/suitB-heads",
-			"loseModel":  "phase_4/models/char/suitB-lose-mod",
+			"loseModel": "phase_4/models/char/suitB-lose-mod",
+            "sizeFactor": 5.29,
 			"skelecog": {
 				"model": "phase_5/models/char/cogB_robot-zero",
 				"loseModel": "phase_5/models/char/cogB_robot-lose-mod"
@@ -116,7 +118,8 @@
 		"c": {
 			"model": "phase_3.5/models/char/suitC-mod",
 			"headsModel": "phase_3.5/models/char/suitC-heads",
-			"loseModel":  "phase_3.5/models/char/suitC-lose-mod",
+			"loseModel": "phase_3.5/models/char/suitC-lose-mod",
+            "sizeFactor": 4.14,
 			"skelecog": {
 				"model": "phase_5/models/char/cogC_robot-zero",
 				"loseModel": "phase_5/models/char/cogC_robot-lose-mod"
