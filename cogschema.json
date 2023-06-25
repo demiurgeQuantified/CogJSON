@@ -30,7 +30,7 @@
         "cogs": {
             "type": "object",
             "description": "Cogs.",
-            "minItems": 1,
+            "minProperties": 1,
             "patternProperties": {
                 "^": {
                   "$ref": "#/definitions/cog"
@@ -106,7 +106,7 @@
         "departments": {
             "type": "object",
             "description": "Department definitions.",
-            "minItems": 1,
+            "minProperties": 1,
             "patternProperties": {
                 "^": {
                     "$ref": "#/definitions/department"
@@ -162,7 +162,7 @@
         "bodies": {
             "type": "object",
             "description": "Body definitions.",
-            "minItems": 1,
+            "minProperties": 1,
             "patternProperties": {
                 "^" : {
                     "$ref": "#/definitions/body"
@@ -223,7 +223,7 @@
         "attacks": {
             "type": "object",
             "description": "Attack definitions.",
-            "minItems": 1,
+            "minProperties": 1,
             "patternProperties": {
                 "^": {
                   "$ref": "#/definitions/attack"
