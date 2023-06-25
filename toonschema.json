@@ -1,0 +1,202 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "toonschema.json",
+    "title": "Toons",
+    "description": "Definition file for Toontown character parts and species.",
+    "type": "object",
+    "properties": {
+        "parts": {
+            "$ref": "#/definitions/parts"
+        },
+        "species": {
+            "$ref": "#/definitions/speciesCollection"
+        }
+    },
+    "definitions": {
+        "parts": {
+            "type": "object",
+            "minProperties": 1,
+            "description": "Body part definitions",
+            "properties": {
+                "legs": {
+                    "$ref": "#/definitions/partCollection",
+                    "description": "Legs definitions"
+                },
+                "torsos": {
+                    "$ref": "#/definitions/partCollection",
+                    "description": "Torso definitions"
+                }
+            },
+            "additionalProperties": false
+        },
+        "partCollection": {
+            "type": "object",
+            "minProperties": 1,
+            "patternProperties": {
+                "^": {
+                    "type": "object",
+                    "minProperties": 1,
+                    "description": "Clothing type (usually 'all', 'shorts', 'skirt')",
+                    "patternProperties": {
+                        "^": {
+                            "$ref": "#/definitions/part"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            }
+        },
+        "part": {
+            "type": "object",
+            "description": "A body part definition.",
+            "properties": {
+                "model": {
+                    "type": "string",
+                    "description": "The path to the model of this part."
+                },
+                "anims": {
+                    "type": "object",
+                    "description": "Dictionary of animations.",
+                    "patternProperties": {
+                        "^": {
+                            "type": "string",
+                            "description": "Name and path of an animation."
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "required": ["model"]
+        },
+        "speciesCollection": {
+            "type": "object",
+            "minProperties": 1,
+            "description": "Species definitions.",
+            "patternProperties": {
+                "^": {
+                    "$ref": "#/definitions/species"
+                }
+            },
+            "additionalProperties": false
+        },
+        "species": {
+            "type": "object",
+            "description": "Species definition.",
+            "properties": {
+                "heads": {
+                    "$ref": "#/definitions/heads"
+                },
+                "size": {
+                    "type": "number",
+                    "description": "Scaling factor applied to this species' model.",
+                    "exclusiveMinimum": 0
+                }
+            },
+            "required": ["heads"]
+        },
+        "heads": {
+            "type": "object",
+            "minProperties": 1,
+            "description": "Head definitions.",
+            "patternProperties": {
+                "^": {
+                    "$ref": "#/definitions/head"
+                }
+            },
+            "additionalProperties": false
+        },
+        "head": {
+            "type": "object",
+            "description": "Head definition.",
+            "properties": {
+                "model": {
+                    "type": "string",
+                    "description": "The path to the primary model of this part."
+                },
+                "parts": {
+                    "$ref": "#/definitions/headParts"
+                },
+                "keepAllParts": {
+                    "type": "boolean",
+                    "default": "false",
+                    "description": "Whether to keep all of the parts of the head visible, even if they aren't referenced in the parts dictionary."
+                },
+                "eyelashes": {
+                    "$ref": "#/definitions/eyelashes"
+                },
+                "muzzles": {
+                    "type": "object",
+                    "minProperties": 1,
+                    "patternProperties": {
+                        "^": {
+                            "type": "string",
+                            "description": "A muzzle name/part pair."
+                        }
+                    },
+                    "description": "Dictionary matching muzzle names to their part in the main model. If the muzzles aren't stored in the main model, extraMuzzles should be used instead."
+                },
+                "extraMuzzles": {
+                    "type": "object",
+                    "minProperties": 1,
+                    "description": "Dictionary where the keys are the names of models to load muzzles from, and the keys are dictionaries of the muzzle names and parts.",
+                    "patternProperties": {
+                        "^": {
+                            "type": "object",
+                            "description": "A model and all the muzzles contained within it.",
+                            "minProperties": 1,
+                            "patternProperties": {
+                                "^": {
+                                    "type": "string",
+                                    "description": "A muzzle name/part pair."
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": ["model", "parts", "eyelashes"]
+        },
+        "headParts": {
+            "type": "object",
+            "description": "A dictionary that identifies the purpose of specific parts of the model.",
+            "properties": {
+                "color": {
+                    "type": "array",
+                    "description": "An array of parts that should be colored with the toon's head color."
+                },
+                "pupil_L": {
+                    "type": "string",
+                    "description": "The toon's left pupil part."
+                },
+                "pupil_R": {
+                    "type": "string",
+                    "description": "The toon's right pupil part."
+                },
+                "keep": {
+                    "type": "array",
+                    "description": "An array of parts that have no special properties, but shouldn't be hidden even if keepAllParts is false."
+                }
+            },
+            "required": ["color", "pupil_L", "pupil_R"]
+        },
+        "eyelashes": {
+            "type": "object",
+            "description": "Definitions for the head's eyelash parts.",
+            "properties": {
+                "model": {
+                    "type": "string",
+                    "description": "The path of the model where the eyelashes are stored."
+                },
+                "open": {
+                    "type": "string",
+                    "description": "The name of the part to show when the toon's eyes are open."
+                },
+                "closed": {
+                    "type": "string",
+                    "description": "The name of the part to show when the toon's eyes are closed."
+                }
+            },
+            "required": ["open", "closed"]
+        }
+    }
+}
