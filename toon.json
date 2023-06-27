@@ -1,0 +1,936 @@
+{
+  "$schema": "toonschema.json",
+  "parts": {
+    "legs": {
+      "all": {
+        "s": {
+          "model": "phase_3/models/char/tt_a_chr_dgs_shorts_legs_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgs_shorts_legs_neutral"
+          }
+        },
+        "m": {
+          "model": "phase_3/models/char/tt_a_chr_dgm_shorts_legs_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgm_shorts_legs_neutral"
+          }
+        },
+        "l": {
+          "model": "phase_3/models/char/tt_a_chr_dgl_shorts_legs_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgl_shorts_legs_neutral"
+          }
+        }
+      }
+    },
+    "torsos": {
+      "shorts": {
+        "s": {
+          "model": "phase_3/models/char/tt_a_chr_dgs_shorts_torso_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgs_shorts_torso_neutral"
+          }
+        },
+        "m": {
+          "model": "phase_3/models/char/tt_a_chr_dgm_shorts_torso_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgm_shorts_torso_neutral"
+          }
+        },
+        "l": {
+          "model": "phase_3/models/char/tt_a_chr_dgl_shorts_torso_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgl_shorts_torso_neutral"
+          }
+        }
+      },
+      "skirt": {
+        "s": {
+          "model": "phase_3/models/char/tt_a_chr_dgs_skirt_torso_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgs_skirt_torso_neutral"
+          }
+        },
+        "m": {
+          "model": "phase_3/models/char/tt_a_chr_dgm_skirt_torso_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgm_skirt_torso_neutral"
+          }
+        },
+        "l": {
+          "model": "phase_3/models/char/tt_a_chr_dgl_skirt_torso_1000",
+          "anims": {
+            "neutral": "phase_3/models/char/tt_a_chr_dgl_skirt_torso_neutral"
+          }
+        }
+      }
+    }
+  },
+  "species": {
+    "cat": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/cat-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/cat-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/cat-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/cat-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/cat-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/cat-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/cat-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/cat-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        }
+      },
+      "size": 0.73
+    },
+    "bear": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/bear-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/bear-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/bear-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/bear-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/bear-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/bear-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/bear-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/bear-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        }
+      },
+      "size": 0.85
+    },
+    "duck": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/duck-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/duck-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/duck-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/duck-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/duck-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/duck-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/duck-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/duck-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        }
+      },
+      "size": 0.66
+    },
+    "horse": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/horse-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long",
+            "keep": ["ears-long"]
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/horse-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/horse-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long",
+            "keep": ["ears-long"]
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/horse-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/horse-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short",
+            "keep": ["ears-short"]
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/horse-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/horse-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short",
+            "keep": ["ears-short"]
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/horse-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        }
+      },
+      "size": 0.85
+    },
+    "monkey": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/monkey-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long",
+            "keep": ["ears-long"]
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/monkey-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/monkey-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long",
+            "keep": ["ears-long"]
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/monkey-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/monkey-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short",
+            "keep": ["ears-short"]
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/monkey-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/monkey-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short",
+            "keep": ["ears-short"]
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/monkey-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        }
+      },
+      "size": 0.68
+    },
+    "mouse": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/mouse-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/mouse-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/mouse-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/mouse-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/mouse-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/mouse-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/mouse-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/mouse-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        }
+      },
+      "size": 0.6
+    },
+    "pig": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/pig-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/pig-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/pig-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/pig-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/pig-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/pig-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/pig-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/pig-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        }
+      },
+      "size": 0.77
+    },
+    "rabbit": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/rabbit-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/rabbit-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/rabbit-heads-1000",
+          "parts": {
+            "color": ["head-long", "head-front-long", "ears-long"],
+            "eyes": "eyes-long",
+            "pupil_L": "joint_pupilL_long",
+            "pupil_R": "joint_pupilR_long"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/rabbit-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/rabbit-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/rabbit-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-long-neutral",
+            "surprise": "muzzle-long-surprise",
+            "sad": "muzzle-long-sad",
+            "smile": "muzzle-long-smile",
+            "angry": "muzzle-long-angry",
+            "laugh": "muzzle-long-laugh"
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/rabbit-heads-1000",
+          "parts": {
+            "color": ["head-short", "head-short-long", "ears-short"],
+            "eyes": "eyes-short",
+            "pupil_L": "joint_pupilL_short",
+            "pupil_R": "joint_pupilR_short"
+          },
+          "eyelashes": {
+            "model": "phase_3/models/char/rabbit-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle-short-neutral",
+            "surprise": "muzzle-short-surprise",
+            "sad": "muzzle-short-sad",
+            "smile": "muzzle-short-smile",
+            "angry": "muzzle-short-angry",
+            "laugh": "muzzle-short-laugh"
+          }
+        }
+      },
+      "size": 0.74
+    },
+    "dog": {
+      "heads": {
+        "ll": {
+          "model": "phase_3/models/char/tt_a_chr_dgl_shorts_head_1000",
+          "parts": {
+            "color": ["head", "head-front"],
+            "eyes": "eyes",
+            "pupil_L": "def_left_pupil",
+            "pupil_R": "def_right_pupil"
+          },
+          "keepAllParts": true,
+          "eyelashes": {
+            "model": "phase_3/models/char/dog-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle"
+          },
+          "extraMuzzles": {
+            "phase_3/models/char/dogLL_Shorts-headMuzzles-1000": {
+              "surprise": "muzzle-long-surprise",
+              "sad": "muzzle-long-sad",
+              "smile": "muzzle-long-smile",
+              "angry": "muzzle-long-angry",
+              "laugh": "muzzle-long-laugh"
+            }
+          }
+        },
+        "ls": {
+          "model": "phase_3/models/char/tt_a_chr_dgm_shorts_head_1000",
+          "parts": {
+            "color": ["head", "head-front"],
+            "eyes": "eyes",
+            "pupil_L": "def_left_pupil",
+            "pupil_R": "def_right_pupil"
+          },
+          "keepAllParts": true,
+          "eyelashes": {
+            "model": "phase_3/models/char/dog-lashes",
+            "open": "open-long",
+            "closed": "closed-long"
+          },
+          "muzzles": {
+            "neutral": "muzzle"
+          },
+          "extraMuzzles": {
+            "phase_3/models/char/dogMM_Shorts-headMuzzles-1000": {
+              "surprise": "muzzle-short-surprise",
+              "sad": "muzzle-short-sad",
+              "smile": "muzzle-short-smile",
+              "angry": "muzzle-short-angry",
+              "laugh": "muzzle-short-laugh"
+            }
+          }
+        },
+        "sl": {
+          "model": "phase_3/models/char/tt_a_chr_dgs_shorts_head_1000",
+          "parts": {
+            "color": ["head", "head-front"],
+            "eyes": "eyes",
+            "pupil_L": "def_left_pupil",
+            "pupil_R": "def_right_pupil"
+          },
+          "keepAllParts": true,
+          "eyelashes": {
+            "model": "phase_3/models/char/dog-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle"
+          },
+          "extraMuzzles": {
+            "phase_3/models/char/dogSS_Shorts-headMuzzles-1000": {
+              "surprise": "muzzle-long-surprise",
+              "sad": "muzzle-long-sad",
+              "smile": "muzzle-long-smile",
+              "angry": "muzzle-long-angry",
+              "laugh": "muzzle-long-laugh"
+            }
+          }
+        },
+        "ss": {
+          "model": "phase_3/models/char/tt_a_chr_dgm_skirt_head_1000",
+          "parts": {
+            "color": ["head", "head-front"],
+            "eyes": "eyes",
+            "pupil_L": "def_left_pupil",
+            "pupil_R": "def_right_pupil"
+          },
+          "keepAllParts": true,
+          "eyelashes": {
+            "model": "phase_3/models/char/dog-lashes",
+            "open": "open-short",
+            "closed": "closed-short"
+          },
+          "muzzles": {
+            "neutral": "muzzle"
+          },
+          "extraMuzzles": {
+            "phase_3/models/char/dogMM_Shorts-headMuzzles-1000": {
+              "surprise": "muzzle-short-surprise",
+              "sad": "muzzle-short-sad",
+              "smile": "muzzle-short-smile",
+              "angry": "muzzle-short-angry",
+              "laugh": "muzzle-short-laugh"
+            }
+          }
+        }
+      },
+      "size": 0.85
+    }
+  }
+}
