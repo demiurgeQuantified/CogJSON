@@ -1550,35 +1550,14 @@
     },
     "mouse": {
       "heads": {
-        "ll": {
+        "l": {
           "model": "phase_3/models/char/mouse-heads-1000",
           "parts": {
             "color": ["head-long", "head-front-long", "ears-long"],
             "eyes": "eyes-long",
             "pupil_L": "joint_pupilL_long",
-            "pupil_R": "joint_pupilR_long"
-          },
-          "eyelashes": {
-            "model": "phase_3/models/char/mouse-lashes",
-            "open": "open-long",
-            "closed": "closed-long"
-          },
-          "muzzles": {
-            "neutral": "muzzle-long-neutral",
-            "surprise": "muzzle-long-surprise",
-            "sad": "muzzle-long-sad",
-            "smile": "muzzle-long-smile",
-            "angry": "muzzle-long-angry",
-            "laugh": "muzzle-long-laugh"
-          }
-        },
-        "ls": {
-          "model": "phase_3/models/char/mouse-heads-1000",
-          "parts": {
-            "color": ["head-long", "head-front-long", "ears-long"],
-            "eyes": "eyes-long",
-            "pupil_L": "joint_pupilL_long",
-            "pupil_R": "joint_pupilR_long"
+            "pupil_R": "joint_pupilR_long",
+            "keep": [""]
           },
           "eyelashes": {
             "model": "phase_3/models/char/mouse-lashes",
@@ -1594,35 +1573,14 @@
             "laugh": "muzzle-short-laugh"
           }
         },
-        "sl": {
+        "s": {
           "model": "phase_3/models/char/mouse-heads-1000",
           "parts": {
             "color": ["head-short", "head-front-short", "ears-short"],
             "eyes": "eyes-short",
             "pupil_L": "joint_pupilL_short",
-            "pupil_R": "joint_pupilR_short"
-          },
-          "eyelashes": {
-            "model": "phase_3/models/char/mouse-lashes",
-            "open": "open-short",
-            "closed": "closed-short"
-          },
-          "muzzles": {
-            "neutral": "muzzle-long-neutral",
-            "surprise": "muzzle-long-surprise",
-            "sad": "muzzle-long-sad",
-            "smile": "muzzle-long-smile",
-            "angry": "muzzle-long-angry",
-            "laugh": "muzzle-long-laugh"
-          }
-        },
-        "ss": {
-          "model": "phase_3/models/char/mouse-heads-1000",
-          "parts": {
-            "color": ["head-short", "head-front-short", "ears-short"],
-            "eyes": "eyes-short",
-            "pupil_L": "joint_pupilL_short",
-            "pupil_R": "joint_pupilR_short"
+            "pupil_R": "joint_pupilR_short",
+            "keep": [""]
           },
           "eyelashes": {
             "model": "phase_3/models/char/mouse-lashes",
