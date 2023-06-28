@@ -1698,7 +1698,7 @@
           "model": "phase_3/models/char/rabbit-heads-1000",
           "parts": {
             "color": ["head-long", "head-front-long", "ears-long"],
-            "eyes": "eyes-long",
+            "eyes": "eyes",
             "pupil_L": "joint_pupilL_long",
             "pupil_R": "joint_pupilR_long"
           },
@@ -1720,7 +1720,7 @@
           "model": "phase_3/models/char/rabbit-heads-1000",
           "parts": {
             "color": ["head-long", "head-front-long", "ears-long"],
-            "eyes": "eyes-long",
+            "eyes": "eyes",
             "pupil_L": "joint_pupilL_long",
             "pupil_R": "joint_pupilR_long"
           },
@@ -1742,7 +1742,7 @@
           "model": "phase_3/models/char/rabbit-heads-1000",
           "parts": {
             "color": ["head-short", "head-front-short", "ears-short"],
-            "eyes": "eyes-short",
+            "eyes": "eyes",
             "pupil_L": "joint_pupilL_short",
             "pupil_R": "joint_pupilR_short"
           },
@@ -1764,7 +1764,7 @@
           "model": "phase_3/models/char/rabbit-heads-1000",
           "parts": {
             "color": ["head-short", "head-front-short", "ears-short"],
-            "eyes": "eyes-short",
+            "eyes": "eyes",
             "pupil_L": "joint_pupilL_short",
             "pupil_R": "joint_pupilR_short"
           },
