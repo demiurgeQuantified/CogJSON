@@ -152,6 +152,18 @@
                             }
                         }
                     }
+                },
+                "anims": {
+                    "type": "object",
+                    "minProperties": 1,
+                    "description": "Dictionary of animations.",
+                    "patternProperties": {
+                        "^": {
+                            "type": "string",
+                            "description": "Name and path of an animation."
+                        }
+                    },
+                    "additionalProperties": false
                 }
             },
             "required": ["model", "parts", "eyelashes"]
